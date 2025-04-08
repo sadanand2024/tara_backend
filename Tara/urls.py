@@ -36,6 +36,12 @@ urlpatterns = [
     # Include Invoicing URLs
     path('payroll/', include('payroll.urls')),
 
+    path('company_incorporation/',include('company_incorporation.urls')),
+    path('gst/',include('gst.urls')),
+    path('msmeregister/',include('msmeregistration.urls')),
+    path('labourlicense/',include('LabourLicense.urls')),
+    path('tradelicense/',include('trade_license.urls')),
+
     path('openapi.json', schema_view.without_ui(cache_timeout=0), name='schema-json'),
 
     # Token authentication URL

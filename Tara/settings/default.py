@@ -62,6 +62,11 @@ INSTALLED_APPS = [
     'django_celery_beat',
     'payroll',
     'storages',
+    'company_incorporation',
+    'gst',
+    'msmeregistration',
+    'LabourLicense',
+    'trade_license'
 ]
 
 MIDDLEWARE = [
@@ -301,9 +306,9 @@ SECRET_ENCRYPTION_KEY = os.getenv("SECRET_ENCRYPTION_KEY", "default-fallback-key
 #
 AWS_REGION = os.getenv('AWS_REGION')  # e.g., "us-east-1"
 AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
+print(AWS_ACCESS_KEY_ID)
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
-print(EMAIL_HOST_USER)
 print("*******************")
 
 S3_BUCKET_NAME = "tarafirstdevelopment"
@@ -375,6 +380,7 @@ AWS_S3_OBJECT_PARAMETERS = {
 }
 AWS_QUERYSTRING_AUTH = True
 AWS_S3_CUSTOM_DOMAIN = f'{S3_BUCKET_NAME}.s3.amazonaws.com'
+print()
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_LOCATION = 'media'
 MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{AWS_LOCATION}/"

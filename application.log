@@ -1,0 +1,740 @@
+2025-04-08 12:53:58,127 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 12:53:58,127 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 12:54:06,070 django.request WARNING  Unauthorized: /company_incorporation/company/create/
+2025-04-08 12:54:06,070 django.request WARNING  Unauthorized: /company_incorporation/company/create/
+2025-04-08 12:54:06,073 django.server WARNING  [31;1m"POST /company_incorporation/company/create/ HTTP/1.1" 401 183[0m
+2025-04-08 12:54:06,073 django.server WARNING  [31;1m"POST /company_incorporation/company/create/ HTTP/1.1" 401 183[0m
+2025-04-08 12:54:31,546 django.request WARNING  Unauthorized: /company_incorporation/company/create/
+2025-04-08 12:54:31,546 django.request WARNING  Unauthorized: /company_incorporation/company/create/
+2025-04-08 12:54:31,582 django.server WARNING  [31;1m"POST /company_incorporation/company/create/ HTTP/1.1" 401 58[0m
+2025-04-08 12:54:31,582 django.server WARNING  [31;1m"POST /company_incorporation/company/create/ HTTP/1.1" 401 58[0m
+2025-04-08 12:57:18,607 django.request WARNING  Bad Request: /token_auth/
+2025-04-08 12:57:18,607 django.request WARNING  Bad Request: /token_auth/
+2025-04-08 12:57:18,608 django.server WARNING  [31;1m"POST /token_auth/ HTTP/1.1" 400 90[0m
+2025-04-08 12:57:18,608 django.server WARNING  [31;1m"POST /token_auth/ HTTP/1.1" 400 90[0m
+2025-04-08 12:59:16,482 django.server INFO     [m"POST /token_auth/ HTTP/1.1" 200 1696[0m
+2025-04-08 12:59:16,482 django.server INFO     [m"POST /token_auth/ HTTP/1.1" 200 1696[0m
+2025-04-08 13:00:03,273 django.server INFO     [m"POST /company_incorporation/company/create/ HTTP/1.1" 201 869[0m
+2025-04-08 13:00:03,273 django.server INFO     [m"POST /company_incorporation/company/create/ HTTP/1.1" 201 869[0m
+2025-04-08 13:02:05,722 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 13:02:05,722 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 13:02:07,603 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:02:07,603 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:02:18,498 django.request WARNING  Not Found: /company_incorporation/company/1/
+2025-04-08 13:02:18,498 django.request WARNING  Not Found: /company_incorporation/company/1/
+2025-04-08 13:02:18,499 django.server WARNING  [33m"PUT /company_incorporation/company/1/ HTTP/1.1" 404 29[0m
+2025-04-08 13:02:18,499 django.server WARNING  [33m"PUT /company_incorporation/company/1/ HTTP/1.1" 404 29[0m
+2025-04-08 13:02:55,598 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 13:02:55,598 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 13:02:57,423 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:02:57,423 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:03:03,068 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 13:03:03,068 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 13:03:04,691 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:03:04,691 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:03:14,058 django.server INFO     [m"PUT /company_incorporation/company/1/ HTTP/1.1" 200 872[0m
+2025-04-08 13:03:14,058 django.server INFO     [m"PUT /company_incorporation/company/1/ HTTP/1.1" 200 872[0m
+2025-04-08 13:03:29,065 django.server INFO     [m"GET /company_incorporation/company/3/ HTTP/1.1" 200 861[0m
+2025-04-08 13:03:29,065 django.server INFO     [m"GET /company_incorporation/company/3/ HTTP/1.1" 200 861[0m
+2025-04-08 13:13:17,679 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\models.py changed, reloading.
+2025-04-08 13:13:17,679 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\models.py changed, reloading.
+2025-04-08 13:13:19,626 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:13:19,626 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:13:29,146 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\models.py changed, reloading.
+2025-04-08 13:13:29,146 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\models.py changed, reloading.
+2025-04-08 13:13:31,168 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:13:31,168 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:14:53,855 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\models.py changed, reloading.
+2025-04-08 13:14:53,855 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\models.py changed, reloading.
+2025-04-08 13:14:55,351 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:14:55,351 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:19:56,194 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\models.py changed, reloading.
+2025-04-08 13:19:56,194 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\models.py changed, reloading.
+2025-04-08 13:19:58,018 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:19:58,018 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:21:35,339 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\models.py changed, reloading.
+2025-04-08 13:21:35,339 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\models.py changed, reloading.
+2025-04-08 13:21:36,904 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:21:36,904 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:22:33,961 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\models.py changed, reloading.
+2025-04-08 13:22:33,961 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\models.py changed, reloading.
+2025-04-08 13:22:35,794 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:22:35,794 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:25:47,207 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\helpers.py changed, reloading.
+2025-04-08 13:25:47,207 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\helpers.py changed, reloading.
+2025-04-08 13:25:48,969 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:25:48,969 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:26:24,758 django.server INFO     [m"POST /company_incorporation/directors-details/ HTTP/1.1" 201 1345[0m
+2025-04-08 13:26:24,758 django.server INFO     [m"POST /company_incorporation/directors-details/ HTTP/1.1" 201 1345[0m
+2025-04-08 13:27:11,285 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 13:27:11,285 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 13:27:13,088 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:27:13,088 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:27:17,833 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 13:27:17,833 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 13:27:19,621 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:27:19,621 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:29:13,578 django.server INFO     [m"PUT /company_incorporation/directors-details/1/ HTTP/1.1" 200 1415[0m
+2025-04-08 13:29:13,578 django.server INFO     [m"PUT /company_incorporation/directors-details/1/ HTTP/1.1" 200 1415[0m
+2025-04-08 13:29:33,271 django.server INFO     [m"GET /company_incorporation/directors-details/1/ HTTP/1.1" 200 1399[0m
+2025-04-08 13:29:33,271 django.server INFO     [m"GET /company_incorporation/directors-details/1/ HTTP/1.1" 200 1399[0m
+2025-04-08 13:34:13,933 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\models.py changed, reloading.
+2025-04-08 13:34:13,933 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\models.py changed, reloading.
+2025-04-08 13:34:15,715 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:34:15,715 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:37:13,598 django.server INFO     [m"POST /company_incorporation/share-holders/ HTTP/1.1" 201 602[0m
+2025-04-08 13:37:13,598 django.server INFO     [m"POST /company_incorporation/share-holders/ HTTP/1.1" 201 602[0m
+2025-04-08 13:37:35,559 django.server INFO     [m"GET /company_incorporation/share-holders/1/ HTTP/1.1" 200 593[0m
+2025-04-08 13:37:35,559 django.server INFO     [m"GET /company_incorporation/share-holders/1/ HTTP/1.1" 200 593[0m
+2025-04-08 13:37:46,154 django.server INFO     [m"POST /company_incorporation/share-holders/ HTTP/1.1" 201 602[0m
+2025-04-08 13:37:46,154 django.server INFO     [m"POST /company_incorporation/share-holders/ HTTP/1.1" 201 602[0m
+2025-04-08 13:38:42,782 django.server INFO     [m"PUT /company_incorporation/share-holders/2/ HTTP/1.1" 200 599[0m
+2025-04-08 13:38:42,782 django.server INFO     [m"PUT /company_incorporation/share-holders/2/ HTTP/1.1" 200 599[0m
+2025-04-08 13:42:25,207 django.server INFO     [m"POST /company_incorporation/authorized-capital/ HTTP/1.1" 201 157[0m
+2025-04-08 13:42:25,207 django.server INFO     [m"POST /company_incorporation/authorized-capital/ HTTP/1.1" 201 157[0m
+2025-04-08 13:42:36,890 django.server INFO     [m"GET /company_incorporation/authorized-capital/1/ HTTP/1.1" 200 157[0m
+2025-04-08 13:42:36,890 django.server INFO     [m"GET /company_incorporation/authorized-capital/1/ HTTP/1.1" 200 157[0m
+2025-04-08 13:42:42,606 django.server INFO     [m"PUT /company_incorporation/authorized-capital/1/ HTTP/1.1" 200 157[0m
+2025-04-08 13:42:42,606 django.server INFO     [m"PUT /company_incorporation/authorized-capital/1/ HTTP/1.1" 200 157[0m
+2025-04-08 13:43:11,773 django.request WARNING  Unauthorized: /company_incorporation/company/create/
+2025-04-08 13:43:11,773 django.request WARNING  Unauthorized: /company_incorporation/company/create/
+2025-04-08 13:43:11,773 django.server WARNING  [31;1m"PUT /company_incorporation/company/create/ HTTP/1.1" 401 183[0m
+2025-04-08 13:43:11,773 django.server WARNING  [31;1m"PUT /company_incorporation/company/create/ HTTP/1.1" 401 183[0m
+2025-04-08 13:43:31,804 django.request WARNING  Method Not Allowed: /company_incorporation/company/create/
+2025-04-08 13:43:31,804 django.request WARNING  Method Not Allowed: /company_incorporation/company/create/
+2025-04-08 13:43:31,805 django.server WARNING  [31;1m"PUT /company_incorporation/company/create/ HTTP/1.1" 405 40[0m
+2025-04-08 13:43:31,805 django.server WARNING  [31;1m"PUT /company_incorporation/company/create/ HTTP/1.1" 405 40[0m
+2025-04-08 13:43:47,091 django.server INFO     [m"PUT /company_incorporation/company/1/ HTTP/1.1" 200 872[0m
+2025-04-08 13:43:47,091 django.server INFO     [m"PUT /company_incorporation/company/1/ HTTP/1.1" 200 872[0m
+2025-04-08 13:57:56,688 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\helpers.py changed, reloading.
+2025-04-08 13:57:56,688 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\helpers.py changed, reloading.
+2025-04-08 13:57:58,705 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 13:57:58,705 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 14:03:02,622 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\helpers.py changed, reloading.
+2025-04-08 14:03:02,622 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\helpers.py changed, reloading.
+2025-04-08 14:03:05,509 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 14:03:05,509 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 14:11:10,495 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\serializers.py changed, reloading.
+2025-04-08 14:11:10,495 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\serializers.py changed, reloading.
+2025-04-08 14:11:12,749 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 14:11:12,749 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 14:12:31,089 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\urls.py changed, reloading.
+2025-04-08 14:12:31,089 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\urls.py changed, reloading.
+2025-04-08 14:12:33,347 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 14:12:33,347 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 14:15:20,543 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\settings\default.py changed, reloading.
+2025-04-08 14:15:20,543 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\settings\default.py changed, reloading.
+2025-04-08 14:15:22,803 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 14:15:22,803 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 14:16:04,340 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\models.py changed, reloading.
+2025-04-08 14:16:04,340 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\models.py changed, reloading.
+2025-04-08 14:16:05,763 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 14:16:05,763 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 14:21:29,887 django.request WARNING  Unauthorized: /gst/basic-detail/
+2025-04-08 14:21:29,887 django.request WARNING  Unauthorized: /gst/basic-detail/
+2025-04-08 14:21:29,888 django.server WARNING  [31;1m"POST /gst/basic-detail/ HTTP/1.1" 401 183[0m
+2025-04-08 14:21:29,888 django.server WARNING  [31;1m"POST /gst/basic-detail/ HTTP/1.1" 401 183[0m
+2025-04-08 14:22:07,799 django.server INFO     [m"POST /gst/basic-detail/ HTTP/1.1" 201 159[0m
+2025-04-08 14:22:07,799 django.server INFO     [m"POST /gst/basic-detail/ HTTP/1.1" 201 159[0m
+2025-04-08 14:31:40,548 django.request WARNING  Bad Request: /gst/business-detail/
+2025-04-08 14:31:40,548 django.request WARNING  Bad Request: /gst/business-detail/
+2025-04-08 14:31:40,551 django.server WARNING  [31;1m"POST /gst/business-detail/ HTTP/1.1" 400 43[0m
+2025-04-08 14:31:40,551 django.server WARNING  [31;1m"POST /gst/business-detail/ HTTP/1.1" 400 43[0m
+2025-04-08 14:32:49,697 django.server INFO     [m"POST /gst/business-detail/ HTTP/1.1" 201 362[0m
+2025-04-08 14:32:49,697 django.server INFO     [m"POST /gst/business-detail/ HTTP/1.1" 201 362[0m
+2025-04-08 14:33:02,251 django.server INFO     [m"GET /gst/business-detail/1/ HTTP/1.1" 200 357[0m
+2025-04-08 14:33:02,251 django.server INFO     [m"GET /gst/business-detail/1/ HTTP/1.1" 200 357[0m
+2025-04-08 14:33:15,108 django.server INFO     [m"PUT /gst/business-detail/1/ HTTP/1.1" 200 363[0m
+2025-04-08 14:33:15,108 django.server INFO     [m"PUT /gst/business-detail/1/ HTTP/1.1" 200 363[0m
+2025-04-08 14:40:14,942 django.server INFO     [m"POST /gst/partners/ HTTP/1.1" 201 485[0m
+2025-04-08 14:40:14,942 django.server INFO     [m"POST /gst/partners/ HTTP/1.1" 201 485[0m
+2025-04-08 14:41:14,275 django.request WARNING  Method Not Allowed: /gst/partners/1/
+2025-04-08 14:41:14,275 django.request WARNING  Method Not Allowed: /gst/partners/1/
+2025-04-08 14:41:14,276 django.server WARNING  [31;1m"POST /gst/partners/1/ HTTP/1.1" 405 41[0m
+2025-04-08 14:41:14,276 django.server WARNING  [31;1m"POST /gst/partners/1/ HTTP/1.1" 405 41[0m
+2025-04-08 14:41:20,036 django.server INFO     [m"GET /gst/partners/1/ HTTP/1.1" 200 487[0m
+2025-04-08 14:41:20,036 django.server INFO     [m"GET /gst/partners/1/ HTTP/1.1" 200 487[0m
+2025-04-08 14:41:50,976 django.server INFO     [m"PUT /gst/partners/1/ HTTP/1.1" 200 485[0m
+2025-04-08 14:41:50,976 django.server INFO     [m"PUT /gst/partners/1/ HTTP/1.1" 200 485[0m
+2025-04-08 14:46:17,691 django.server INFO     [m"POST /gst/business-documents/ HTTP/1.1" 201 530[0m
+2025-04-08 14:46:17,691 django.server INFO     [m"POST /gst/business-documents/ HTTP/1.1" 201 530[0m
+2025-04-08 14:54:32,382 django.server INFO     [m"PUT /gst/business-documents/1/ HTTP/1.1" 200 527[0m
+2025-04-08 14:54:32,382 django.server INFO     [m"PUT /gst/business-documents/1/ HTTP/1.1" 200 527[0m
+2025-04-08 14:54:43,741 django.server INFO     [m"PUT /gst/business-documents/1/ HTTP/1.1" 200 530[0m
+2025-04-08 14:54:43,741 django.server INFO     [m"PUT /gst/business-documents/1/ HTTP/1.1" 200 530[0m
+2025-04-08 14:54:53,566 django.server INFO     [m"GET /gst/business-documents/1/ HTTP/1.1" 200 530[0m
+2025-04-08 14:54:53,566 django.server INFO     [m"GET /gst/business-documents/1/ HTTP/1.1" 200 530[0m
+2025-04-08 14:57:15,976 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 14:57:15,976 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 14:57:18,085 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 14:57:18,085 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 14:58:27,031 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\models.py changed, reloading.
+2025-04-08 14:58:27,031 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\models.py changed, reloading.
+2025-04-08 14:58:29,083 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 14:58:29,083 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 15:01:16,123 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\models.py changed, reloading.
+2025-04-08 15:01:16,123 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\models.py changed, reloading.
+2025-04-08 15:01:18,360 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 15:01:18,360 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 15:02:23,182 django.server INFO     [m"POST /gst/principal-place/ HTTP/1.1" 201 565[0m
+2025-04-08 15:02:23,182 django.server INFO     [m"POST /gst/principal-place/ HTTP/1.1" 201 565[0m
+2025-04-08 15:03:18,678 django.server INFO     [m"PUT /gst/principal-place/1/ HTTP/1.1" 200 565[0m
+2025-04-08 15:03:18,678 django.server INFO     [m"PUT /gst/principal-place/1/ HTTP/1.1" 200 565[0m
+2025-04-08 15:19:55,739 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\urls.py changed, reloading.
+2025-04-08 15:19:55,739 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\urls.py changed, reloading.
+2025-04-08 15:19:57,728 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 15:19:57,728 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 15:55:07,753 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\MSMERegistration\models.py changed, reloading.
+2025-04-08 15:55:07,753 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\MSMERegistration\models.py changed, reloading.
+2025-04-08 15:55:11,532 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 15:55:11,532 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 15:56:09,771 django.request WARNING  Unauthorized: /msmeregister/msme/
+2025-04-08 15:56:09,771 django.request WARNING  Unauthorized: /msmeregister/msme/
+2025-04-08 15:56:09,772 django.server WARNING  [31;1m"POST /msmeregister/msme/ HTTP/1.1" 401 183[0m
+2025-04-08 15:56:09,772 django.server WARNING  [31;1m"POST /msmeregister/msme/ HTTP/1.1" 401 183[0m
+2025-04-08 15:56:28,551 django.request WARNING  Bad Request: /msmeregister/msme/
+2025-04-08 15:56:28,551 django.request WARNING  Bad Request: /msmeregister/msme/
+2025-04-08 15:56:28,555 django.server WARNING  [31;1m"POST /msmeregister/msme/ HTTP/1.1" 400 111[0m
+2025-04-08 15:56:28,555 django.server WARNING  [31;1m"POST /msmeregister/msme/ HTTP/1.1" 400 111[0m
+2025-04-08 15:56:46,691 django.request WARNING  Bad Request: /msmeregister/msme/
+2025-04-08 15:56:46,691 django.request WARNING  Bad Request: /msmeregister/msme/
+2025-04-08 15:56:46,693 django.server WARNING  [31;1m"POST /msmeregister/msme/ HTTP/1.1" 400 36[0m
+2025-04-08 15:56:46,693 django.server WARNING  [31;1m"POST /msmeregister/msme/ HTTP/1.1" 400 36[0m
+2025-04-08 15:57:06,072 django.server INFO     [m"POST /msmeregister/msme/ HTTP/1.1" 201 1158[0m
+2025-04-08 15:57:06,072 django.server INFO     [m"POST /msmeregister/msme/ HTTP/1.1" 201 1158[0m
+2025-04-08 16:06:15,556 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\urls.py changed, reloading.
+2025-04-08 16:06:15,556 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\urls.py changed, reloading.
+2025-04-08 16:06:17,969 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:06:17,969 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:07:36,775 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\models.py changed, reloading.
+2025-04-08 16:07:36,775 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\models.py changed, reloading.
+2025-04-08 16:07:38,773 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:07:38,773 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:08:14,727 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\models.py changed, reloading.
+2025-04-08 16:08:14,727 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\models.py changed, reloading.
+2025-04-08 16:08:16,257 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:08:16,257 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:09:36,752 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\models.py changed, reloading.
+2025-04-08 16:09:36,752 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\models.py changed, reloading.
+2025-04-08 16:09:38,908 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:09:38,908 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:10:17,533 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\settings\default.py changed, reloading.
+2025-04-08 16:10:17,533 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\settings\default.py changed, reloading.
+2025-04-08 16:10:19,401 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:10:19,401 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:18:13,695 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:18:13,695 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:18:23,734 django.server INFO     [m"POST /msmeregister/msme/ HTTP/1.1" 201 1158[0m
+2025-04-08 16:18:23,734 django.server INFO     [m"POST /msmeregister/msme/ HTTP/1.1" 201 1158[0m
+2025-04-08 16:21:21,854 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\urls.py changed, reloading.
+2025-04-08 16:21:21,854 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\urls.py changed, reloading.
+2025-04-08 16:21:24,166 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:21:24,166 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:22:18,576 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\models.py changed, reloading.
+2025-04-08 16:22:18,576 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\models.py changed, reloading.
+2025-04-08 16:22:20,537 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:22:20,537 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:24:44,121 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\helpers.py changed, reloading.
+2025-04-08 16:24:44,121 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\helpers.py changed, reloading.
+2025-04-08 16:24:45,666 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:24:45,666 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:25:25,288 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\models.py changed, reloading.
+2025-04-08 16:25:25,288 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\models.py changed, reloading.
+2025-04-08 16:25:27,230 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:25:27,230 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:26:27,690 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\helpers.py changed, reloading.
+2025-04-08 16:26:27,690 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\helpers.py changed, reloading.
+2025-04-08 16:26:29,477 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:26:29,477 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:26:42,070 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\helpers.py changed, reloading.
+2025-04-08 16:26:42,070 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\helpers.py changed, reloading.
+2025-04-08 16:26:43,837 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:26:43,837 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:27:32,323 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\helpers.py changed, reloading.
+2025-04-08 16:27:32,323 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\helpers.py changed, reloading.
+2025-04-08 16:27:33,883 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:27:33,883 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:27:48,852 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\models.py changed, reloading.
+2025-04-08 16:27:48,852 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\models.py changed, reloading.
+2025-04-08 16:27:50,602 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:27:50,602 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:28:35,660 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\helpers.py changed, reloading.
+2025-04-08 16:28:35,660 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\helpers.py changed, reloading.
+2025-04-08 16:28:37,147 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:28:37,147 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:29:14,545 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\helpers.py changed, reloading.
+2025-04-08 16:29:14,545 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\helpers.py changed, reloading.
+2025-04-08 16:29:15,934 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:29:15,934 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:29:27,026 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\models.py changed, reloading.
+2025-04-08 16:29:27,026 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\models.py changed, reloading.
+2025-04-08 16:29:28,411 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:29:28,411 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:30:02,498 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\urls.py changed, reloading.
+2025-04-08 16:30:02,498 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\urls.py changed, reloading.
+2025-04-08 16:30:03,977 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:30:03,977 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:30:22,482 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 16:30:22,482 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 16:30:23,769 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:30:23,769 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:30:25,733 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 16:30:25,733 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 16:30:27,224 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:30:27,224 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:32:38,347 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 16:32:38,347 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 16:32:39,967 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:32:39,967 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:33:30,275 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\models.py changed, reloading.
+2025-04-08 16:33:30,275 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\models.py changed, reloading.
+2025-04-08 16:33:31,569 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:33:31,569 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:34:40,063 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\models.py changed, reloading.
+2025-04-08 16:34:40,063 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\models.py changed, reloading.
+2025-04-08 16:34:41,202 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:34:41,202 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:38:33,506 django.request WARNING  Not Found: /tradelicense/basic-details/
+2025-04-08 16:38:33,506 django.request WARNING  Not Found: /tradelicense/basic-details/
+2025-04-08 16:38:33,507 django.server WARNING  [33m"POST /tradelicense/basic-details/ HTTP/1.1" 404 5213[0m
+2025-04-08 16:38:33,507 django.server WARNING  [33m"POST /tradelicense/basic-details/ HTTP/1.1" 404 5213[0m
+2025-04-08 16:40:13,054 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\urls.py changed, reloading.
+2025-04-08 16:40:13,054 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\urls.py changed, reloading.
+2025-04-08 16:40:14,677 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:40:14,677 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:40:18,481 django.request WARNING  Unauthorized: /tradelicense/basic-details/
+2025-04-08 16:40:18,481 django.request WARNING  Unauthorized: /tradelicense/basic-details/
+2025-04-08 16:40:18,482 django.server WARNING  [31;1m"POST /tradelicense/basic-details/ HTTP/1.1" 401 183[0m
+2025-04-08 16:40:18,482 django.server WARNING  [31;1m"POST /tradelicense/basic-details/ HTTP/1.1" 401 183[0m
+2025-04-08 16:40:33,657 django.request WARNING  Bad Request: /tradelicense/basic-details/
+2025-04-08 16:40:33,657 django.request WARNING  Bad Request: /tradelicense/basic-details/
+2025-04-08 16:40:33,659 django.server WARNING  [31;1m"POST /tradelicense/basic-details/ HTTP/1.1" 400 54[0m
+2025-04-08 16:40:33,659 django.server WARNING  [31;1m"POST /tradelicense/basic-details/ HTTP/1.1" 400 54[0m
+2025-04-08 16:40:44,227 django.server INFO     [m"POST /tradelicense/basic-details/ HTTP/1.1" 201 8[0m
+2025-04-08 16:40:44,227 django.server INFO     [m"POST /tradelicense/basic-details/ HTTP/1.1" 201 8[0m
+2025-04-08 16:43:00,759 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 16:43:00,759 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 16:43:02,580 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:43:02,580 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:43:19,543 django.server INFO     [m"PUT /tradelicense/basic-details/1/ HTTP/1.1" 200 313[0m
+2025-04-08 16:43:19,543 django.server INFO     [m"PUT /tradelicense/basic-details/1/ HTTP/1.1" 200 313[0m
+2025-04-08 16:44:35,827 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\urls.py changed, reloading.
+2025-04-08 16:44:35,827 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\urls.py changed, reloading.
+2025-04-08 16:44:37,659 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:44:37,659 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:56:53,663 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 16:56:53,663 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 16:56:56,211 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:56:56,211 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:57:07,251 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 16:57:07,251 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 16:57:09,517 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:57:09,517 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:57:23,169 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 16:57:23,169 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 16:57:25,263 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:57:25,263 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:57:56,997 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 16:57:56,997 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 16:57:58,463 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 16:57:58,463 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:01:26,059 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:01:26,059 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:01:28,001 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:01:28,001 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:01:48,593 django.request WARNING  Method Not Allowed: /company_incorporation/company/1/
+2025-04-08 17:01:48,593 django.request WARNING  Method Not Allowed: /company_incorporation/company/1/
+2025-04-08 17:01:48,595 django.server WARNING  [31;1m"POST /company_incorporation/company/1/ HTTP/1.1" 405 41[0m
+2025-04-08 17:01:48,595 django.server WARNING  [31;1m"POST /company_incorporation/company/1/ HTTP/1.1" 405 41[0m
+2025-04-08 17:02:01,882 django.server INFO     [m"POST /company_incorporation/company/create/ HTTP/1.1" 201 872[0m
+2025-04-08 17:02:01,882 django.server INFO     [m"POST /company_incorporation/company/create/ HTTP/1.1" 201 872[0m
+2025-04-08 17:04:45,072 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:04:45,072 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:04:46,958 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:04:46,958 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:05:42,184 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:05:42,184 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:05:43,489 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:05:43,489 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:06:01,389 django.request WARNING  Method Not Allowed: /company_incorporation/authorized-capital/1/
+2025-04-08 17:06:01,389 django.request WARNING  Method Not Allowed: /company_incorporation/authorized-capital/1/
+2025-04-08 17:06:01,392 django.server WARNING  [31;1m"POST /company_incorporation/authorized-capital/1/ HTTP/1.1" 405 41[0m
+2025-04-08 17:06:01,392 django.server WARNING  [31;1m"POST /company_incorporation/authorized-capital/1/ HTTP/1.1" 405 41[0m
+2025-04-08 17:06:07,133 django.server INFO     [m"POST /company_incorporation/authorized-capital/ HTTP/1.1" 201 157[0m
+2025-04-08 17:06:07,133 django.server INFO     [m"POST /company_incorporation/authorized-capital/ HTTP/1.1" 201 157[0m
+2025-04-08 17:08:59,635 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 17:08:59,635 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 17:09:01,420 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:09:01,420 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:09:17,843 django.server INFO     [m"POST /gst/basic-detail/ HTTP/1.1" 201 159[0m
+2025-04-08 17:09:17,843 django.server INFO     [m"POST /gst/basic-detail/ HTTP/1.1" 201 159[0m
+2025-04-08 17:10:53,694 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 17:10:53,694 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 17:10:55,475 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:10:55,475 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:11:04,635 django.server INFO     [m"POST /gst/business-detail/ HTTP/1.1" 201 363[0m
+2025-04-08 17:11:04,635 django.server INFO     [m"POST /gst/business-detail/ HTTP/1.1" 201 363[0m
+2025-04-08 17:11:06,604 django.server INFO     [m"POST /gst/business-detail/ HTTP/1.1" 201 363[0m
+2025-04-08 17:11:06,604 django.server INFO     [m"POST /gst/business-detail/ HTTP/1.1" 201 363[0m
+2025-04-08 17:12:39,181 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 17:12:39,181 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 17:12:40,749 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:12:40,749 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:12:55,627 django.server INFO     [m"POST /gst/business-documents/ HTTP/1.1" 201 530[0m
+2025-04-08 17:12:55,627 django.server INFO     [m"POST /gst/business-documents/ HTTP/1.1" 201 530[0m
+2025-04-08 17:13:06,581 django.server INFO     [m"POST /gst/business-documents/ HTTP/1.1" 201 530[0m
+2025-04-08 17:13:06,581 django.server INFO     [m"POST /gst/business-documents/ HTTP/1.1" 201 530[0m
+2025-04-08 17:15:19,288 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 17:15:19,288 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 17:15:21,068 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:15:21,068 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:15:24,474 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 17:15:24,474 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 17:15:26,292 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:15:26,292 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:15:32,090 django.server INFO     [m"POST /gst/principal-place/ HTTP/1.1" 201 565[0m
+2025-04-08 17:15:32,090 django.server INFO     [m"POST /gst/principal-place/ HTTP/1.1" 201 565[0m
+2025-04-08 17:15:38,223 django.server INFO     [m"POST /gst/principal-place/ HTTP/1.1" 201 565[0m
+2025-04-08 17:15:38,223 django.server INFO     [m"POST /gst/principal-place/ HTTP/1.1" 201 565[0m
+2025-04-08 17:17:27,643 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\views.py changed, reloading.
+2025-04-08 17:17:27,643 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\views.py changed, reloading.
+2025-04-08 17:17:29,482 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:17:29,482 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:19:11,455 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\views.py changed, reloading.
+2025-04-08 17:19:11,455 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\views.py changed, reloading.
+2025-04-08 17:19:13,449 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:19:13,449 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:19:53,980 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\views.py changed, reloading.
+2025-04-08 17:19:53,980 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\views.py changed, reloading.
+2025-04-08 17:19:55,423 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:19:55,423 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:22:46,486 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:22:46,486 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:22:48,727 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:22:48,727 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:23:16,444 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:23:16,444 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:23:18,440 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:23:18,440 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:23:24,749 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:23:24,749 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:23:26,471 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:23:26,471 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:28:03,641 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:28:03,641 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:28:05,425 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:28:05,425 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:29:11,051 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:29:11,051 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:29:12,803 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:29:12,803 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:33:05,600 django.server INFO     [m"POST /company_incorporation/directors-details/ HTTP/1.1" 201 1430[0m
+2025-04-08 17:33:05,600 django.server INFO     [m"POST /company_incorporation/directors-details/ HTTP/1.1" 201 1430[0m
+2025-04-08 17:33:26,249 django.server INFO     [m"POST /company_incorporation/directors-details/ HTTP/1.1" 201 1430[0m
+2025-04-08 17:33:26,249 django.server INFO     [m"POST /company_incorporation/directors-details/ HTTP/1.1" 201 1430[0m
+2025-04-08 17:36:05,146 django.server INFO     [m"POST /company_incorporation/directors-details/ HTTP/1.1" 201 1430[0m
+2025-04-08 17:36:05,146 django.server INFO     [m"POST /company_incorporation/directors-details/ HTTP/1.1" 201 1430[0m
+2025-04-08 17:37:41,671 django.server INFO     [m"POST /company_incorporation/directors-details/ HTTP/1.1" 201 1430[0m
+2025-04-08 17:37:41,671 django.server INFO     [m"POST /company_incorporation/directors-details/ HTTP/1.1" 201 1430[0m
+2025-04-08 17:38:43,941 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:38:43,941 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:38:45,916 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:38:45,916 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:39:48,400 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:39:48,400 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:43:00,911 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:43:00,911 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:44:26,428 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:44:26,428 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:46:21,380 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:46:21,380 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:47:51,755 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:47:51,755 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 17:47:54,500 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:47:54,500 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:49:30,640 django.server INFO     [m"POST /company_incorporation/company/create/ HTTP/1.1" 201 872[0m
+2025-04-08 17:49:30,640 django.server INFO     [m"POST /company_incorporation/company/create/ HTTP/1.1" 201 872[0m
+2025-04-08 17:50:01,943 django.server INFO     [m"POST /company_incorporation/company/create/ HTTP/1.1" 201 872[0m
+2025-04-08 17:50:01,943 django.server INFO     [m"POST /company_incorporation/company/create/ HTTP/1.1" 201 872[0m
+2025-04-08 17:50:33,142 django.server INFO     [m"POST /company_incorporation/company/create/ HTTP/1.1" 201 869[0m
+2025-04-08 17:50:33,142 django.server INFO     [m"POST /company_incorporation/company/create/ HTTP/1.1" 201 869[0m
+2025-04-08 17:53:46,326 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\views.py changed, reloading.
+2025-04-08 17:53:46,326 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\views.py changed, reloading.
+2025-04-08 17:53:48,544 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:53:48,544 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:56:30,149 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\views.py changed, reloading.
+2025-04-08 17:56:30,149 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\views.py changed, reloading.
+2025-04-08 17:56:32,888 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:56:32,888 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:58:05,462 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\MSMERegistration\views.py changed, reloading.
+2025-04-08 17:58:05,462 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\MSMERegistration\views.py changed, reloading.
+2025-04-08 17:58:07,651 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:58:07,651 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:59:08,762 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\views.py changed, reloading.
+2025-04-08 17:59:08,762 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\views.py changed, reloading.
+2025-04-08 17:59:10,961 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 17:59:10,961 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:00:31,489 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 18:00:31,489 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 18:00:33,690 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:00:33,690 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:01:44,625 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 18:01:44,625 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 18:01:46,390 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:01:46,390 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:02:26,822 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 18:02:26,822 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 18:02:29,006 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:02:29,006 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:04:24,730 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 18:04:24,730 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 18:04:26,757 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:04:26,757 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:04:27,110 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:04:27,110 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:05:30,326 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:05:30,326 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:05:42,327 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:05:42,327 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:09:47,230 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\settings\default.py changed, reloading.
+2025-04-08 18:09:47,230 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\settings\default.py changed, reloading.
+2025-04-08 18:09:48,614 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:09:48,614 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:10:35,776 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:10:35,776 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:13:11,970 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:13:11,970 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:14:19,793 django.utils.autoreload INFO     C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\core\_dtype_ctypes.py changed, reloading.
+2025-04-08 18:14:19,793 django.utils.autoreload INFO     C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\numpy\core\_dtype_ctypes.py changed, reloading.
+2025-04-08 18:14:23,666 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:14:23,666 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:14:35,232 django.utils.autoreload INFO     C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\storages\__init__.py changed, reloading.
+2025-04-08 18:14:35,232 django.utils.autoreload INFO     C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\storages\__init__.py changed, reloading.
+2025-04-08 18:14:40,697 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:14:40,697 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:16:16,179 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 18:16:16,179 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 18:16:19,918 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:16:19,918 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:17:58,504 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 18:17:58,504 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 18:18:02,009 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:18:02,009 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:18:41,023 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 18:18:41,023 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 18:18:44,478 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:18:44,478 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:19:15,071 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:19:15,071 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:19:18,988 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:19:18,988 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:20:12,370 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:20:12,370 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:20:16,518 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:20:16,518 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:21:19,228 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:21:19,228 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:21:22,795 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:21:22,795 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:22:23,859 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:22:23,859 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:23:11,570 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:23:11,570 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:23:16,019 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:23:16,019 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:23:33,456 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:23:33,456 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:24:46,875 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:24:46,875 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:24:51,297 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:24:51,297 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:25:05,934 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:25:05,934 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:25:10,360 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:25:10,360 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:25:23,276 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:25:23,276 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:25:54,909 django.request WARNING  Bad Request: /company_incorporation/directors-details/
+2025-04-08 18:25:54,909 django.request WARNING  Bad Request: /company_incorporation/directors-details/
+2025-04-08 18:25:54,910 django.server WARNING  "POST /company_incorporation/directors-details/ HTTP/1.1" 400 76
+2025-04-08 18:25:54,910 django.server WARNING  "POST /company_incorporation/directors-details/ HTTP/1.1" 400 76
+2025-04-08 18:27:13,956 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:27:13,956 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:27:19,631 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:27:19,631 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:27:46,534 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:27:46,534 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:41:07,140 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:41:07,140 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:41:38,731 django.request ERROR    Internal Server Error: /company_incorporation/share-holders/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\decorators.py", line 41, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Tara-Backend-code\tara_backend\company_incorporation\views.py", line 207, in share_holders_list_create
+    if((shareholder.type_of_shareholder == data.get['type_of_shareholder'] )and
+                                           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'method' object is not subscriptable
+2025-04-08 18:41:38,731 django.request ERROR    Internal Server Error: /company_incorporation/share-holders/
+Traceback (most recent call last):
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\surya\AppData\Local\Programs\Python\Python311\Lib\site-packages\rest_framework\decorators.py", line 41, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Tara-Backend-code\tara_backend\company_incorporation\views.py", line 207, in share_holders_list_create
+    if((shareholder.type_of_shareholder == data.get['type_of_shareholder'] )and
+                                           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'method' object is not subscriptable
+2025-04-08 18:41:38,738 django.server ERROR    "POST /company_incorporation/share-holders/ HTTP/1.1" 500 140505
+2025-04-08 18:41:38,738 django.server ERROR    "POST /company_incorporation/share-holders/ HTTP/1.1" 500 140505
+2025-04-08 18:42:40,214 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:42:40,214 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:42:44,509 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:42:44,509 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:42:55,667 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:42:55,667 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:43:23,771 django.request WARNING  Bad Request: /company_incorporation/share-holders/
+2025-04-08 18:43:23,771 django.request WARNING  Bad Request: /company_incorporation/share-holders/
+2025-04-08 18:43:23,773 django.server WARNING  "POST /company_incorporation/share-holders/ HTTP/1.1" 400 76
+2025-04-08 18:43:23,773 django.server WARNING  "POST /company_incorporation/share-holders/ HTTP/1.1" 400 76
+2025-04-08 18:43:40,216 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:43:40,216 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:43:44,292 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:43:44,292 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:44:08,326 django.request WARNING  Bad Request: /company_incorporation/share-holders/
+2025-04-08 18:44:08,326 django.request WARNING  Bad Request: /company_incorporation/share-holders/
+2025-04-08 18:44:08,327 django.server WARNING  "POST /company_incorporation/share-holders/ HTTP/1.1" 400 79
+2025-04-08 18:44:08,327 django.server WARNING  "POST /company_incorporation/share-holders/ HTTP/1.1" 400 79
+2025-04-08 18:46:26,089 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:46:26,089 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:46:30,105 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:46:30,105 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:51:36,380 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:51:36,380 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:51:42,889 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:51:42,889 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:53:36,098 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:53:36,098 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 18:53:39,977 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:53:39,977 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:59:14,613 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 18:59:14,613 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 18:59:18,196 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:59:18,196 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 18:59:56,508 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 18:59:56,508 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 19:00:00,015 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:00:00,015 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:00:54,129 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 19:00:54,129 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 19:00:58,171 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:00:58,171 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:01:15,104 django.request WARNING  Bad Request: /gst/partners/
+2025-04-08 19:01:15,104 django.request WARNING  Bad Request: /gst/partners/
+2025-04-08 19:01:15,105 django.server WARNING  "POST /gst/partners/ HTTP/1.1" 400 71
+2025-04-08 19:01:15,105 django.server WARNING  "POST /gst/partners/ HTTP/1.1" 400 71
+2025-04-08 19:02:19,778 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 19:02:19,778 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 19:02:23,081 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:02:23,081 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:06:30,406 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 19:06:30,406 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\TradeLicense\views.py changed, reloading.
+2025-04-08 19:06:33,492 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:06:33,492 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:08:05,850 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\settings\default.py changed, reloading.
+2025-04-08 19:08:05,850 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\Tara\settings\default.py changed, reloading.
+2025-04-08 19:08:09,446 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:08:09,446 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:08:15,766 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\payroll\models.py changed, reloading.
+2025-04-08 19:08:15,766 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\payroll\models.py changed, reloading.
+2025-04-08 19:08:19,881 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:08:19,881 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:22:13,950 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:22:13,950 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:23:34,428 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:23:34,428 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:23:56,570 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\migrations\0001_test1.py changed, reloading.
+2025-04-08 19:23:56,570 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\LabourLicense\migrations\0001_test1.py changed, reloading.
+2025-04-08 19:23:59,624 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:23:59,624 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:24:55,338 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:24:55,338 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:25:34,090 django.request WARNING  Bad Request: /company_incorporation/directors-details/
+2025-04-08 19:25:34,090 django.request WARNING  Bad Request: /company_incorporation/directors-details/
+2025-04-08 19:25:34,091 django.server WARNING  "POST /company_incorporation/directors-details/ HTTP/1.1" 400 76
+2025-04-08 19:25:34,091 django.server WARNING  "POST /company_incorporation/directors-details/ HTTP/1.1" 400 76
+2025-04-08 19:27:35,929 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 19:27:35,929 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 19:27:40,809 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:27:40,809 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:28:19,420 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 19:28:19,420 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 19:28:23,270 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:28:23,270 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:29:02,356 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 19:29:02,356 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\company_incorporation\views.py changed, reloading.
+2025-04-08 19:29:06,571 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:29:06,571 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:31:40,503 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 19:31:40,503 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\gst\views.py changed, reloading.
+2025-04-08 19:31:44,661 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:31:44,661 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:32:55,540 django.request WARNING  Bad Request: /gst/partners/
+2025-04-08 19:32:55,540 django.request WARNING  Bad Request: /gst/partners/
+2025-04-08 19:32:55,542 django.server WARNING  "POST /gst/partners/ HTTP/1.1" 400 71
+2025-04-08 19:32:55,542 django.server WARNING  "POST /gst/partners/ HTTP/1.1" 400 71
+2025-04-08 19:33:46,328 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\trade_license\views.py changed, reloading.
+2025-04-08 19:33:46,328 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\trade_license\views.py changed, reloading.
+2025-04-08 19:33:50,702 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:33:50,702 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:35:22,314 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\trade_license\views.py changed, reloading.
+2025-04-08 19:35:22,314 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\trade_license\views.py changed, reloading.
+2025-04-08 19:35:26,374 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:35:26,374 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:35:39,203 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\trade_license\views.py changed, reloading.
+2025-04-08 19:35:39,203 django.utils.autoreload INFO     D:\Tara-Backend-code\tara_backend\trade_license\views.py changed, reloading.
+2025-04-08 19:35:42,777 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-04-08 19:35:42,777 django.utils.autoreload INFO     Watching for file changes with StatReloader
