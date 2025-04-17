@@ -497,6 +497,10 @@ class EmployeeSalaryDetails(models.Model):
 
     valid_from = models.DateField(auto_now_add=True)  # Salary start date
     valid_to = models.DateField(null=True, blank=True)  # Salary end date (null = current salary)
+    created_on = models.DateField(auto_now_add=True)
+    created_month = models.IntegerField(editable=False)
+    created_year = models.IntegerField(editable=False)
+
 
     def clean(self):
         """Ensure no open salary record exists before adding a new one."""
@@ -538,6 +542,12 @@ class EmployeeSalaryDetails(models.Model):
             active_salary.save()
 
         self.clean()  # Validate the model before saving
+
+        # Auto-set created_month and created_year based on created_on (if new object)
+        if not self.pk:
+            today = self.created_on or date.today()
+            self.created_month = today.month
+            self.created_year = today.year
         super().save(*args, **kwargs)
 
     def __str__(self):
@@ -652,6 +662,33 @@ class AdvanceLoan(models.Model):
 
     def __str__(self):
         return f"{self.employee.first_name} - {self.loan_type} Loan ({self.amount})"
+
+class BonusIncentive(models.Model):
+    employee = models.ForeignKey(
+        'EmployeeManagement', on_delete=models.CASCADE, related_name='employee_bonus_incentive'
+    )
+    bonus_type = models.CharField(max_length=120, null=False, blank=False)
+    amount = models.IntegerField()
+    month = models.IntegerField(null=False)
+    year = models.IntegerField(null=False, editable=False)
+    financial_year = models.CharField(max_length=10, null=False, blank=False)
+
+    def save(self, *args, **kwargs):
+        try:
+            start_year, end_year = map(int, self.financial_year.split('-'))
+            # Determine year based on financial year and month
+            if self.month >= 4:
+                self.year = start_year
+            else:
+                self.year = end_year
+        except (ValueError, IndexError):
+            raise ValueError("Invalid financial_year format. It should be like '2024-2025'")
+
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return f"{self.employee.first_name} - {self.bonus_type} Bonus ({self.amount})"
+
 
 
 class EmployeeAttendance(models.Model):

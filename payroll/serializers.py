@@ -444,6 +444,50 @@ class EmployeeSalaryDetailsSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+class SimplifiedEmployeeSalarySerializer(serializers.ModelSerializer):
+    employee_name = serializers.SerializerMethodField()
+    department = serializers.SerializerMethodField()
+    designation = serializers.SerializerMethodField()
+    previous_ctc = serializers.SerializerMethodField()
+    current_ctc = serializers.DecimalField(source='annual_ctc', max_digits=12, decimal_places=2)
+    employee_id = serializers.IntegerField(source='employee.id')
+    associate_id = serializers.CharField(source='employee.associate_id')  # Added based on your model
+
+    class Meta:
+        model = EmployeeSalaryDetails
+        fields = [
+            'id',
+            'employee_id',
+            'associate_id',  # Include associate_id in response
+            'employee_name',
+            'department',
+            'designation',
+            'previous_ctc',
+            'current_ctc',
+            'created_on'
+        ]
+
+    def get_employee_name(self, obj):
+        # Handle potential None values for middle name
+        middle_name = f" {obj.employee.middle_name}" if obj.employee.middle_name else ""
+        return f"{obj.employee.first_name}{middle_name} {obj.employee.last_name}"
+
+    def get_department(self, obj):
+        return obj.employee.department.dept_name if obj.employee.department else None
+
+    def get_designation(self, obj):
+        return obj.employee.designation.designation_name if obj.employee.designation else None
+
+    def get_previous_ctc(self, obj):
+        previous_salary = (
+            EmployeeSalaryDetails.objects
+            .filter(employee=obj.employee, id__lt=obj.id)
+            .order_by('-id')
+            .first()
+        )
+        return previous_salary.annual_ctc if previous_salary else None
+
+
 class EmployeePersonalDetailsSerializer(serializers.ModelSerializer):
     class Meta:
         model = EmployeePersonalDetails
@@ -597,6 +641,28 @@ class AdvanceLoanSerializer(serializers.ModelSerializer):
         if data.get('no_of_months') <= 0:
             raise serializers.ValidationError({"error": "Number of months must be greater than zero."})
         return data
+
+
+class BonusIncentiveSerializer(serializers.ModelSerializer):
+    employee_name = serializers.SerializerMethodField()
+    department = serializers.SerializerMethodField()
+    designation = serializers.SerializerMethodField()
+
+    class Meta:
+        model = BonusIncentive
+        fields = '__all__'
+
+    def get_employee_name(self, obj):
+        """Returns the formatted employee name"""
+        return f"{obj.employee.first_name} {obj.employee.middle_name} {obj.employee.last_name}".strip()
+
+    def get_department(self, obj):
+        """Fetch employee's department"""
+        return obj.employee.department.dept_name
+
+    def get_designation(self, obj):
+        """Fetch employee's designation"""
+        return obj.employee.designation.designation_name
 
 
 class AdvanceLoanDetailSerializer(serializers.ModelSerializer):
