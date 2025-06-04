@@ -35,6 +35,12 @@ class PayrollOrg(models.Model):
     leave_management = models.BooleanField(default=False)
     holiday_management = models.BooleanField(default=False)
     employee_master = models.BooleanField(default=False)
+    logo = models.FileField(
+        upload_to=logo_upload_path,
+        null=True,
+        blank=True,
+        help_text="Upload the company logo for payroll organization."
+    )
 
     def to_representation(self, instance):
         """Convert OrderedDict to dict before returning JSON."""

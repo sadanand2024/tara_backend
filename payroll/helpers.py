@@ -277,8 +277,6 @@ def to_decimal_2places(value):
         return Decimal('0.00')
 
 def calculate_tds(regime_type, annual_salary, current_month, epf_value, ept_value):
-    print(regime_type, annual_salary, current_month, epf_value, ept_value)
-
     # Standard deductions
     standard_deduction_new = 75000
     standard_deduction_old = 50000
@@ -366,7 +364,7 @@ def calculate_tds(regime_type, annual_salary, current_month, epf_value, ept_valu
 
     monthly_tds = total_tax / month_left if month_left > 0 else 0
 
-    return round(monthly_tds / 10) * 10, taxable_income
+    return monthly_tds, taxable_income
 
 
 
