@@ -8,9 +8,9 @@ from servicetasks.models import ServiceTask
 
 
 class BasicBusinessInfo(models.Model):
-    service_request = models.ForeignKey(ServiceRequest, on_delete=models.CASCADE, related_name='basic_business_info')
+    service_request = models.OneToOneField(ServiceRequest, on_delete=models.CASCADE, related_name='basic_business_info')
     service_type = models.CharField(max_length=20, default="GST", editable=False)
-    service_task = models.ForeignKey(ServiceTask, on_delete=models.CASCADE,
+    service_task = models.OneToOneField(ServiceTask, on_delete=models.CASCADE,
                                      related_name='service_task_basic_business_info')
 
     legal_name_of_business = models.CharField(max_length=255, blank=True)
@@ -63,9 +63,9 @@ class BasicBusinessInfo(models.Model):
 
 
 class RegistrationInfo(models.Model):
-    service_request = models.ForeignKey(ServiceRequest, on_delete=models.CASCADE, related_name='registration_info')
+    service_request = models.OneToOneField(ServiceRequest, on_delete=models.CASCADE, related_name='registration_info')
     service_type = models.CharField(max_length=20, default="GST", editable=False)
-    service_task = models.ForeignKey(ServiceTask, on_delete=models.CASCADE,
+    service_task = models.OneToOneField(ServiceTask, on_delete=models.CASCADE,
                                      related_name='service_task_registration_info')
     YES_NO_CHOICES = [
         ('Yes', 'Yes'),
@@ -115,16 +115,15 @@ class RegistrationInfo(models.Model):
 
 
 class PrincipalPlaceDetails(models.Model):
-    service_request = models.ForeignKey(ServiceRequest, on_delete=models.CASCADE, related_name='principal_place_details')
+    service_request = models.OneToOneField(ServiceRequest, on_delete=models.CASCADE, related_name='principal_place_details')
     service_type = models.CharField(max_length=20, default="GST", editable=False)
-    service_task = models.ForeignKey(ServiceTask, on_delete=models.CASCADE,
+    service_task = models.OneToOneField(ServiceTask, on_delete=models.CASCADE,
                                      related_name='service_task_principal_place_details')
     ADDRESS_DOCUMENT_CHOICES = [
         ('Electricity Bill', 'Electricity Bill'),
         ('Lease deed/Rental agreement', 'Lease Deed/Rental Agreement'),
         ('Property tax receipt', 'Property Tax Receipt'),
     ]
-
     OWNERSHIP_TYPE_CHOICES = [
         ('own', 'Own'),
         ('rented', 'Rented'),
@@ -159,57 +158,28 @@ class PrincipalPlaceDetails(models.Model):
             city = self.principal_place.get('city') or 'N/A'
         return f"Principal Place - {address_line} - {city}"
 
-
-@receiver(post_save, sender=PrincipalPlaceDetails)
-def sync_service_task_status(sender, instance, **kwargs):
-    task = instance.service_task
-
-    # Sync status
-    if task.status != instance.status:
-        task.status = instance.status
-
-    # Sync completion %
-    task.completion_percentage = calculate_completion_percentage(instance)
-
-    task.save()
-
-
 class PromoterSignatoryDetails(models.Model):
-    service_request = models.ForeignKey(ServiceRequest, on_delete=models.CASCADE, related_name='promoter_signatory_details')
+    service_request = models.OneToOneField(ServiceRequest,on_delete=models.CASCADE,
+                            related_name='promoter_signatory_details')
     service_type = models.CharField(max_length=20, default="GST", editable=False)
-    service_task = models.ForeignKey(ServiceTask, on_delete=models.CASCADE,
-                                     related_name='service_task_promoter_signatory_details')
-    name = models.CharField(max_length=255)
-    gender = models.CharField(
-        max_length=10,
-        choices=[('male', 'Male'), ('female', 'Female'), ('other', 'Other')],
-        blank=True
+    service_task = models.OneToOneField(
+        ServiceTask,
+        on_delete=models.CASCADE,
+        related_name='service_task_promoter_signatory_details'
     )
-    YES_NO_CHOICES = [
-        ('Yes', 'Yes'),
-        ('No', 'No'),
-    ]
-    mobile = models.CharField(max_length=15, blank=True, null=True)
-    email = models.EmailField(blank=True, null=True)
-    pan = models.FileField(upload_to=upload_promoter_pan, blank=True, null=True)
-    aadhaar = models.FileField(upload_to=upload_promoter_aadhaar, blank=True, null=True)
-    photo = models.FileField(upload_to=upload_promoter_photo, blank=True, null=True)
-    designation = models.CharField(max_length=255, blank=True, null=True)
-    residential_same_as_aadhaar_address = models.CharField(
-        max_length=3,
-        choices=YES_NO_CHOICES,
-        default='No'
+    status = models.CharField(
+        max_length=20,
+        choices=[
+            ('in progress', 'In Progress'),
+            ('completed', 'Completed'),
+            ('sent for approval', 'Sent for Approval'),
+            ('revoked', 'Revoked')
+        ],
+        default='in progress'
     )
-    residential_address = models.JSONField(default=dict, blank=True, null=True)
-    status = models.CharField(max_length=20, choices=[
-        ('in progress', 'In Progress'),
-        ('completed', 'Completed'),
-        ('sent for approval', 'Sent for Approval'),
-        ('revoked', 'Revoked')
-    ], default='in progress', null=False, blank=False)
-    assignee = models.ForeignKey(Users, on_delete=models.SET_NULL, null=True, blank=True,
-                                 related_name='assigned_promoter_signatory_details')
-    reviewer = models.ForeignKey(Users, on_delete=models.SET_NULL, null=True, blank=True,
+    assignee = models.ForeignKey(Users, on_delete=models.SET_NULL,null=True, blank=True,
+                                related_name='assigned_promoter_signatory_details')
+    reviewer = models.ForeignKey(Users, on_delete=models.SET_NULL,null=True, blank=True,
                                  related_name='reviewed_promoter_signatory_details')
 
     def save(self, *args, **kwargs):
@@ -220,15 +190,42 @@ class PromoterSignatoryDetails(models.Model):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f"{self.name} - {self.designation or 'N/A'} ({self.pan})"
+        return f"PromoterSignatoryDetails - {self.service_request.id}"
+
+class PromoterSignatoryInfo(models.Model):
+    promoter_detail = models.ForeignKey(
+        PromoterSignatoryDetails,
+        on_delete=models.CASCADE,
+        related_name='info_list'
+    )
+    name = models.CharField(max_length=255)
+    gender = models.CharField(
+        max_length=10,
+        choices=[('male', 'Male'), ('female', 'Female'), ('other', 'Other')],
+        blank=True
+    )
+    mobile = models.CharField(max_length=15, blank=True, null=True)
+    email = models.EmailField(blank=True, null=True)
+    pan = models.FileField(upload_to=upload_promoter_pan, blank=True, null=True)
+    aadhaar = models.FileField(upload_to=upload_promoter_aadhaar, blank=True, null=True)
+    photo = models.FileField(upload_to=upload_promoter_photo, blank=True, null=True)
+    designation = models.CharField(max_length=255, blank=True, null=True)
+    residential_same_as_aadhaar_address = models.CharField(
+        max_length=3,
+        choices=[('Yes', 'Yes'), ('No', 'No')],
+        default='No'
+    )
+    residential_address = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.name} - {self.designation or 'N/A'}"
 
 
 class GSTReviewFilingCertificate(models.Model):
     service_type = models.CharField(max_length=20, default="GST", editable=False)
-    service_request = models.ForeignKey(ServiceRequest, on_delete=models.CASCADE,
+    service_request = models.OneToOneField(ServiceRequest, on_delete=models.CASCADE,
                                             related_name='GST_review_filing_certificate')
-    service_task = models.ForeignKey(ServiceTask, on_delete=models.CASCADE, related_name='ServiceTask_GST_review_filing_certificate')
-
+    service_task = models.OneToOneField(ServiceTask, on_delete=models.CASCADE, related_name='ServiceTask_GST_review_filing_certificate')
 
     FILING_STATUS_CHOICES = [
         ('in progress', 'In Progress'),
@@ -243,9 +240,9 @@ class GSTReviewFilingCertificate(models.Model):
     ]
     review_certificate = models.FileField(upload_to=review_filing_certificate, null=True, blank=True)
     status = models.CharField(max_length=20, choices=[('in progress', 'In Progress'), ('completed', 'Completed'),
-                                                      ('sent for approval', 'Sent for Approval'),
-                                                      ('revoked', 'Revoked')], default='in progress', null=False,
-                              blank=False)
+                                        ('sent for approval', 'Sent for Approval'),('revoked', 'Revoked')],
+                                         default='in progress', null=False,blank=False)
+
     filing_status = models.CharField(
         max_length=20,
         choices=FILING_STATUS_CHOICES,

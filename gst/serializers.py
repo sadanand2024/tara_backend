@@ -4,7 +4,8 @@ from .models import (
     RegistrationInfo,
     PrincipalPlaceDetails,
     PromoterSignatoryDetails,
-    GSTReviewFilingCertificate
+    GSTReviewFilingCertificate,
+    PromoterSignatoryInfo
 )
 
 
@@ -31,6 +32,12 @@ class PrincipalPlaceDetailsSerializer(serializers.ModelSerializer):
 class PromoterSignatoryDetailsSerializer(serializers.ModelSerializer):
     class Meta:
         model = PromoterSignatoryDetails
+        fields = '__all__'
+
+
+class PromoterSignatoryInfoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PromoterSignatoryInfo
         fields = '__all__'
 
 

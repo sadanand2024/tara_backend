@@ -24,14 +24,13 @@ def upload_bank_statement(instance, filename):
 
 
 def upload_promoter_pan(instance, filename):
-    return os.path.join('GST', 'PromoterPAN', str(instance.service_request.id), filename)
+    return os.path.join('GST', 'PromoterPAN', str(instance.promoter_detail.service_request.id), filename)
 
 def upload_promoter_aadhaar(instance, filename):
-    return os.path.join('GST', 'PromoterAadhaar', str(instance.service_request.id), filename)
+    return os.path.join('GST', 'PromoterAadhaar', str(instance.promoter_detail.service_request.id), filename)
 
 def upload_promoter_photo(instance, filename):
-    return os.path.join('GST', 'PromoterPhotos', str(instance.service_request.id), filename)
-
+    return os.path.join('GST', 'PromoterPhotos', str(instance.promoter_detail.service_request.id), filename)
 
 def get_all_records(model, serializer_class):
     """
