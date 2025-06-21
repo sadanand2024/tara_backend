@@ -374,19 +374,19 @@ class ShareholdersDetails(models.Model):
     ]
     shareholder_type = models.CharField(
         max_length=50, choices=shareholder_type_choices,
-        default='Individual Indian Resident'
+        null=True, blank=True
     )
 
     mobile_number = models.BigIntegerField(null=True, blank=True)
     email = models.EmailField(null=True, blank=True)
 
     pan_card_file = models.FileField(
-        upload_to=upload_pan_card_file,
+        upload_to=upload_pan_card_file_shareholders,
         null=True, blank=True,
         storage=PrivateS3Storage()
     )
     aadhaar_card_file = models.FileField(
-        upload_to=upload_aadhaar_card_file,
+        upload_to=upload_aadhaar_card_file_shareholders,
         null=True, blank=True,
         storage=PrivateS3Storage()
     )
@@ -419,7 +419,7 @@ class ShareholdersDetails(models.Model):
         null=True, blank=True
     )
     residential_address_proof_file = models.FileField(
-        upload_to=upload_residential_address_proof_file,
+        upload_to=upload_address_proof_file_shareholder,
         null=True, blank=True,
         storage=PrivateS3Storage()
     )
@@ -428,28 +428,65 @@ class ShareholdersDetails(models.Model):
         return f"{self.shareholder_first_name} {self.last_name}"
 
 class ReviewFilingCertificate(models.Model):
-    service_type = models.CharField(max_length=20, default="Company Incorporation", editable=False)
-    service_request = models.OneToOneField(ServiceRequest, on_delete=models.CASCADE,
-                                            related_name='company_review_filing_certificate')
-    service_task = models.OneToOneField(ServiceTask, on_delete=models.CASCADE,
-                                        related_name='service_task_company_review_filing_certificate')
+    STATUS_CHOICES = [
+        ('in progress', 'In Progress'),
+        ('completed', 'Completed'),
+        ('sent for approval', 'Sent for Approval'),
+        ('revoked', 'Revoked')
+    ]
+    REVIEW_STATUS_CHOICES = [
+        ('in progress', 'In Progress'),
+        ('completed', 'Completed'),
+        ('sent for approval', 'Sent for Approval'),
+        ('revoked', 'Revoked')
+    ]
 
     FILING_STATUS_CHOICES = [
         ('in progress', 'In Progress'),
         ('filed', 'Filed'),
+        ('sent for approval', 'Sent for Approval'),
         ('resubmitted', 'Resubmitted'),
-        ]
+    ]
+
     APPROVAL_STATUS_CHOICES = [
         ('pending', 'Pending'),
         ('resubmission', 'Resubmission'),
+        ('sent for approval', 'Sent for Approval'),
         ('rejected', 'Rejected'),
         ('approved', 'Approved'),
     ]
-    review_certificate = models.FileField(upload_to=review_filing_certificate, null=True, blank=True,
-                                          storage=PrivateS3Storage())
-    status = models.CharField(max_length=20, choices=[('in progress', 'In Progress'), ('completed', 'Completed'),
-                                        ('sent for approval', 'Sent for Approval'),('revoked', 'Revoked')],
-                                         default='in progress', null=False,blank=False)
+
+    service_request = models.OneToOneField(ServiceRequest, on_delete=models.CASCADE,
+                                           related_name='company_service_request_review_certificate')
+
+    service_type = models.CharField(
+        max_length=20,
+        default="Company Incorporation",
+        editable=False
+    )
+
+    service_task = models.OneToOneField(ServiceTask, on_delete=models.CASCADE,
+                                    related_name='company_service_task_review_certificate', null=False, blank=False)
+
+    review_certificate = models.FileField(upload_to=review_filing_certificate,
+                                          null=True, blank=True, storage=PrivateS3Storage())
+
+    draft_filing_certificate = models.FileField(upload_to=draft_filing_certificate,
+                                                null=True, blank=True, storage=PrivateS3Storage())
+    review_certificate_status = models.CharField(
+        max_length=20,
+        choices=REVIEW_STATUS_CHOICES,
+        null=True,
+        blank=True,
+        default=None
+    )
+
+    status = models.CharField(
+        max_length=20,
+        choices=STATUS_CHOICES,
+        null=True,
+        blank=True,
+    )
 
     filing_status = models.CharField(
         max_length=20,
@@ -458,6 +495,7 @@ class ReviewFilingCertificate(models.Model):
         blank=True,
         default=None
     )
+
     approval_status = models.CharField(
         max_length=20,
         choices=APPROVAL_STATUS_CHOICES,
@@ -465,14 +503,10 @@ class ReviewFilingCertificate(models.Model):
         blank=True,
         default=None
     )
-    assignee = models.ForeignKey(
-        Users, on_delete=models.SET_NULL, null=True, blank=True,
-        related_name='assigned_company_review_filing_certificate'
-    )
-    reviewer = models.ForeignKey(
-        Users, on_delete=models.SET_NULL, null=True, blank=True,
-        related_name='reviewed_company_review_filing_certificate'
-    )
+    assignee = models.ForeignKey(Users, on_delete=models.SET_NULL, null=True, blank=True,
+                                 related_name='assigned_incorporation_review_filing_certificate')
+    reviewer = models.ForeignKey(Users, on_delete=models.SET_NULL, null=True, blank=True,
+                                 related_name='reviewed_incorporation_review_filing_certificate')
 
     def save(self, *args, **kwargs):
         # Default to service_request values if not set
@@ -480,10 +514,10 @@ class ReviewFilingCertificate(models.Model):
             self.assignee = self.service_task.assignee
         if not self.reviewer and self.service_task.reviewer:
             self.reviewer = self.service_task.reviewer
-        super().save(*args, **kwargs)
+        super(ReviewFilingCertificate, self).save(*args, **kwargs)
 
     def __str__(self):
-        return f"Review Filing Certificate for Service Request {self.service_request.id} - Status: {self.status}"
+        return self.review_certificate_status or "No Review Status"
 
 
 def calculate_completion_percentage(instance, exclude_fields=None):
@@ -566,8 +600,6 @@ def auto_create_shareholder_from_director_details(sender, instance, created, **k
 
     try:
         director = instance.directors_ref
-        print(director.service_request_id)
-
         service_request = ServiceRequest.objects.get(id=director.service_request_id)
         task = service_request.service_tasks.get(category_name='Shareholders')
 
@@ -602,7 +634,6 @@ def auto_create_shareholder_from_director_details(sender, instance, created, **k
                     shareholder_first_name=instance.director_first_name,
                     middle_name=instance.middle_name,
                     last_name=instance.last_name,
-                    shareholder_type='Individual Indian Resident',
                     mobile_number=instance.mobile_number,
                     email=instance.email,
                     pan_card_file=instance.pan_card_file,
@@ -627,7 +658,6 @@ def auto_create_shareholder_from_director_details(sender, instance, created, **k
                 shareholder_first_name=instance.director_first_name,
                 middle_name=instance.middle_name,
                 last_name=instance.last_name,
-                shareholder_type='Individual Indian Resident',
                 mobile_number=instance.mobile_number,
                 email=instance.email,
                 pan_card_file=instance.pan_card_file,

@@ -39,7 +39,6 @@ class DirectorsSerializer(serializers.ModelSerializer):
 
 class ShareholdersDetailsSerializer(serializers.ModelSerializer):
     shareholding_percentage = serializers.FloatField(allow_null=True)
-    directors_details = DirectorsDetailsSerializer(source='directors_details_ref', read_only=True)
 
     class Meta:
         model = ShareholdersDetails

@@ -249,7 +249,10 @@ def directors_list(request):
         return Response(serializer.data)
 
     elif request.method == 'POST':
-        data = request.data.copy()
+        if request.FILES:
+           data =  request.data
+        else:
+            data = request.data.copy()
         service_request = data.get('service_request')
 
         try:
@@ -359,7 +362,8 @@ def directors_detail(request, pk):
                 record.specimen_signature_of_director.storage.delete(record.specimen_signature_of_director.name)
 
             record.delete()
-            return Response({"message": "All director details deleted successfully"}, status=status.HTTP_204_NO_CONTENT)
+            return Response({"message": "All director details deleted successfully"},
+                            status=status.HTTP_204_NO_CONTENT)
 
         except Exception as e:
             return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
@@ -440,8 +444,11 @@ def shareholders_detail(request, pk):
     elif request.method == 'PUT':
         serializer = ShareholdersDetailsSerializer(record, data=request.data, partial=True)
         if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_200_OK)
+            try:
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_200_OK)
+            except Exception as e:
+                return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     elif request.method == 'DELETE':
@@ -538,13 +545,10 @@ def review_filing_certificate_detail(request, id):
             serializer.save()
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
     elif request.method == 'DELETE':
-        if record.review_certificate:
-            record.review_certificate.storage.delete(record.review_certificate.name)
         record.delete()
-        return Response({"message": "Company Review Filing Certificate deleted successfully"},
-                        status=status.HTTP_204_NO_CONTENT)
+        return Response(status=status.HTTP_204_NO_CONTENT)
+    return Response({"error": "Invalid request method"}, status=status.HTTP_400_BAD_REQUEST)
 
 
 Task_Model_Serializer_Map = {
