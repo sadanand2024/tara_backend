@@ -172,6 +172,8 @@ urlpatterns = [
 
     path('bonus-incentives/by-payroll-month', views.bonus_incentive_list, name='bonus-incentive-list'),
 
+    path('bonus-incentives', views.bonus_incentive_create, name='bonus-incentive-list-all'),
+
     path('bonus-incentives/<int:pk>', views.bonus_incentive_detail, name='bonus-incentive-detail'),
 
     # path('employee-salaries', views.active_employee_salaries, name='active-employee-salaries'),

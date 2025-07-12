@@ -1425,7 +1425,7 @@ def calculate_esi_contributions(pf_wage, basic_monthly, esi_enabled):
     }
 
 
-def calculate_employee_deductions(pf_wage, basic_monthly, epf_enabled, esi_enabled, pt_enabled):
+def calculate_employee_deductions(pf_wage, basic_monthly, epf_enabled, esi_enabled, pt_enabled, basic_annual):
     deductions = {}
 
     # EPF Employee Contribution
@@ -1437,19 +1437,19 @@ def calculate_employee_deductions(pf_wage, basic_monthly, epf_enabled, esi_enabl
 
     # ESI Employee Contribution
     deductions["ESI Employee Contribution"] = {
-        "monthly": 0.0075 * basic_monthly,
-        "annually": (0.0075 * basic_monthly) * 12,
+        "monthly": 0.0075 * basic_annual,
+        "annually": (0.0075 * basic_annual) * 12,
         "calculation_type": "Percentage (0.75%) of PF wage"
-    } if esi_enabled and basic_monthly <= 21000 else (
+    } if esi_enabled and basic_annual <= 21000 else (
         {"monthly": 0, "annually": 0, "calculation_type": "Not Applicable"}
         if esi_enabled else {"monthly": "NA", "annually": "NA", "calculation_type": "Not Applicable"}
     )
 
     # Professional Tax
     if pt_enabled:
-        if basic_monthly <= 15000:
+        if basic_annual <= 15000:
             pt_monthly = 0
-        elif 15001 <= basic_monthly <= 20000:
+        elif 15001 <= basic_annual <= 20000:
             pt_monthly = 150
         else:
             pt_monthly = 200
@@ -1489,6 +1489,7 @@ def format_deductions(deductions):
 
 
 @api_view(['POST'])
+@permission_classes([AllowAny])
 def calculate_payroll(request):
     try:
         data = request.data
@@ -1578,7 +1579,8 @@ def calculate_payroll(request):
 
             gross_salary = safe_sum(item["annually"] for item in earnings)
 
-            deductions = calculate_employee_deductions(pf_wage, basic_salary_monthly, epf_enabled, esi_enabled, pt_enabled)
+            deductions = calculate_employee_deductions(pf_wage, basic_salary_monthly, epf_enabled, esi_enabled,
+                                                       pt_enabled, basic_annual)
             deductions["loan_emi"] = calculate_loan_deductions(employee_id) if employee_id else "NA"
 
             total_deductions = safe_sum(
@@ -3816,6 +3818,22 @@ def bonus_incentive_list(request):
             {"error": "Unexpected error occurred.", "details": str(e)},
             status=status.HTTP_500_INTERNAL_SERVER_ERROR
         )
+
+
+@api_view(['POST'])
+def bonus_incentive_create(request):
+    """
+    Create a new bonus incentive record.
+    Input: employee_id, amount, financial_year, month, year, bonus_type
+    """
+    serializer = BonusIncentiveSerializer(data=request.data)
+    if serializer.is_valid():
+        try:
+            bonus = serializer.save()
+            return Response(BonusIncentiveSerializer(bonus).data, status=status.HTTP_201_CREATED)
+        except Exception as e:
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 @api_view(['GET', 'PUT', 'DELETE'])
