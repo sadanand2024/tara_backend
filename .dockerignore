@@ -1,0 +1,21 @@
+# General
+.git
+.gitignore
+*.pyc
+__pycache__
+*.log
+*.tmp
+.env
+
+# Docker
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Project specific
+application.log
+appspec.yml
+buildspec.yml
+/nginx
+/scripts
+/signatures
