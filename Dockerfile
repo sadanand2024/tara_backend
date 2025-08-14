@@ -46,7 +46,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install wkhtmltopdf from verified .deb package
+# Install wkhtmltopdf from verified .deb packageee
 RUN curl -fSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-3/wkhtmltox_0.12.6.1-3.bookworm_amd64.deb -o /tmp/wkhtmltopdf.deb \
     && apt-get install -y --no-install-recommends /tmp/wkhtmltopdf.deb \
     && rm -f /tmp/wkhtmltopdf.deb \
