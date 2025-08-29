@@ -12,10 +12,16 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Create virtual environment
 RUN python -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
-# Install Python dependencies
+    PIP_CACHE_DIR=/root/.cache/pip
+
+# Copy only requirements for caching
 COPY requirements.txt .
-RUN pip install --no-cache-dir --upgrade pip && \
-   pip install --no-cache-dir -r requirements.txt
+
+# Install Python dependencies using BuildKit cache
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install --upgrade pip && \
+    pip install --cache-dir=/root/.cache/pip -r requirements.txt
+
 # ---------- STAGE 2: Runtime ----------
 FROM python:3.12-slim
 # Runtime environment
@@ -47,7 +53,7 @@ RUN curl -fSL https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.
 # Copy from builder
 COPY --from=builder /opt/venv /opt/venv
 # Copy application
-COPY . /app
+COPY . .
 # Healthcheck
 #HEALTHCHECK --interval=30s --timeout=5s \
 #    CMD python -c "import requests; requests.get('http://localhost:8000/health', timeout=2)" || exit 1

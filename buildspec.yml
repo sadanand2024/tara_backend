@@ -30,13 +30,17 @@ phases:
       - echo "DOCKER_IMAGE=$DOCKER_IMAGE"
       - echo "IMAGE_TAG=$IMAGE_TAG"
       - echo "REDIS_IMAGE=$REDIS_IMAGE"
+      - echo "[PreBuild] Pulling cache image (latest) if available..."
+      - export DOCKER_BUILDKIT=1
+      - docker pull $DOCKER_IMAGE:latest || echo "Cache image not found, building from scratch"
 
   build:
     commands:
-      - echo "[Build] Building Docker image..."
-      - docker build -t $DOCKER_IMAGE:$IMAGE_TAG .
-      - echo "[Build] Pushing to Docker Hub..."
+      - echo "[Build] Building Docker image with caching..."
+      - docker build --build-arg BUILDKIT_INLINE_CACHE=1 --cache-from=$DOCKER_IMAGE:latest -t $DOCKER_IMAGE:$IMAGE_TAG -t $DOCKER_IMAGE:latest .
+      - echo "[Build] Pushing images..."
       - docker push $DOCKER_IMAGE:$IMAGE_TAG
+      - docker push $DOCKER_IMAGE:latest
 
   post_build:
     commands:
@@ -53,4 +57,3 @@ artifacts:
     - scripts/*
     - nginx/*
     - docker-compose.yml
-    - Tara/**/*
